@@ -1,5 +1,6 @@
 require 'pry'
 def reverse_each_word(array)
   new = array.split(/ /)
-  new.collect { |e| e.reverse }.join(" ") # .collect returns a new array so don't return array
+  new.collect { |e| e.reverse }.join(" ")
+# new.collect { |e| e.reverse } returns a new array of modified elements. then we can call join(" ") on that new array by putting join outside of it
 end
