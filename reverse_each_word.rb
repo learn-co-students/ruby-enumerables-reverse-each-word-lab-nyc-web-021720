@@ -1,8 +1,7 @@
-def reverse_each_word (sentence)
- new_arr = []
- s = sentence.split(" ")
- new_arr = s.collect {|n| n.reverse}
- new_arr.join(" ")
+def reverse_each_word(string)
+  new = string.split(" ").collect do |str|
+   str.reverse!
+  
+  end
+  new.join(" ")
 end
-
-
